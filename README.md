@@ -28,9 +28,13 @@
    <br>
    - apikey可以去以下网站申请：
      - [Tavily](https://www.tavily.com/)
+    
      - [DashScope](https://dashscope.com/)
+       
      - [ModelScope](https://www.modelscope.cn/)
+       
      - [OMDb](https://www.omdbapi.com/)
+       
      
    `.env`文件内添加以下内容：
     ```
