@@ -14,7 +14,7 @@
 
 1. 克隆本仓库：
    ```
-   git clone https://gitee.com/mercur1alspe/modelscope_doge.git
+   git clone https://github.com/LayyarVzz/modelscope_doge.git
    cd movie_recommendation
    ```
 
@@ -24,15 +24,19 @@
    ```
 
 3. 配置API密钥：
-   - 我已经准备好了一个`.env`，所以这一步可以跳过
+   - 需要的API_Key放在`.env里`
    <br>
-   - 如果想自己找apikey，可以去以下网站申请：
+   - apikey可以去以下网站申请：
      - [Tavily](https://www.tavily.com/)
      - [DashScope](https://dashscope.com/)
-   创建`.env`文件，并添加以下内容：
+     - [ModelScope](https://www.modelscope.cn/)
+     - [OMDb](https://www.omdbapi.com/)
+     
+   `.env`文件内添加以下内容：
     ```
     TAVILY_API_KEY=your_tavily_api_key
     DASHSCOPE_API_KEY=your_dashscope_api_key
+   ......
     ```
 
 ## 使用方法
@@ -40,6 +44,8 @@
 1. 运行应用：
    ```
    gradio main.py
+   
+   # 或者直接运行 main.py
    ```
 
 2. 在浏览器中打开显示的URL（通常是`http://127.0.0.1:7860/`）
@@ -54,8 +60,8 @@
 
 系统提供两种推荐模式，可通过界面上的切换按钮选择：
 
-- **普通模式**（默认）：响应速度其实比langchain更慢，因为用了ds的思考模式
-- **LangChain模式**：推荐质量不一定高，但是速度很快，而且 是API杀手
+- **普通模式**（默认，使用deepseek）：响应速度其实比langchain更慢，因为用了ds的思考模式
+- **LangChain模式**(使用阿里云的qwen)：推荐质量不一定高，但是速度很快，而且 是API杀手
 
 ## 项目结构
 
