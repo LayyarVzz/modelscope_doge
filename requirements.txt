@@ -1,0 +1,11 @@
+# 电影推荐系统依赖项
+openai>=1.0.0
+pillow>=9.0.0
+gradio>=5.23.2
+python-dotenv>=1.0.0
+tavily-python>=0.2.0
+requests>=2.31.0
+langchain>=0.0.335
+langchain-openai>=0.0.2
+langchain-community>=0.0.16
+langchain-core>=0.1.17 
